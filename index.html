@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous" defer></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
 </head>
 <body>
     
+    <div id="Modal" class="Modal">
+
+    <div class="ModalText">
+        <span class="close">War Games!</span>
+        <p>Rules of The Game:</p>
+
+        <ul>
+            <li>The Goal is 5,000 points!</li>
+            <li>There are 4 variations of enemies. The easier the enemy, the more commonly they will appear.</li>
+            <li>Each round, you will face one random foe.</li>
+            <li>Easy mobs are worth up to 500 points.</li>
+            <li>Medium mobs are worth up to 1,000 points.</li>
+            <li>Hard mobs are worth up to 2,000 points.</li>
+            <li>The boss is worth 3,000 points!</li>
+        </ul>
+
+        <p>Choose how many rounds you wish to participate in. Note: You will have to survive until the entered number rounds has been completed.</p>
+
+        <input type="text" placeholder="Choose Wisely..." name="InputRounds">
+        <button type="start" class="start" Id="start">Enter Battle!</button>
+
+    </div>
+</div>
+   
 </body>
 </html>

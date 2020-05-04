@@ -49,3 +49,21 @@ based on chosen skill (Var AttackModifier = hero.Attack - Enemy.AC
 
 
     for enemies: same but replace hero with enemy and enemy with hero.
+*/
+    var Modal = document.getElementById("Modal");
+   
+    var start = document.getElementsByClassName("start");
+
+    onload = function () {
+        Modal.style.display = "block";
+    }
+
+    // start.onclick = function () {
+    //     Modal.style.display = "none";
+    // }
+    // start.onclick = function(event) {
+    //     if(event.target == start) {
+    //         Modal.style.display = "none";
+    //     }
+    // }
+
