@@ -9,30 +9,128 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <div id="Modal" class="Modal">
+    <div class="container">
 
-    <div class="ModalText">
-        <span class="close">War Games!</span>
-        <p>Rules of The Game:</p>
+        <div class="row">
 
-        <ul>
-            <li>The Goal is 5,000 points!</li>
-            <li>There are 4 variations of enemies. The easier the enemy, the more commonly they will appear.</li>
-            <li>Each round, you will face one random foe.</li>
-            <li>Easy mobs are worth up to 500 points.</li>
-            <li>Medium mobs are worth up to 1,000 points.</li>
-            <li>Hard mobs are worth up to 2,000 points.</li>
-            <li>The boss is worth 3,000 points!</li>
-        </ul>
+            <div class="Player1">
+            
+                <table class="table">
+                    <tr>
+                        <th>Ability</th>
+                        <th>Score</th>
+                        <th>Modifier</th>
+                    </tr>
+                    <tr>
+                        <td>Str</td>
+                        <td><input type="number" value="10" id="StrScore" max="20" onchange="reflectMod()"></td>
+                        <td><input type="number" placeholder ="0" id="StrMod"></td>
+                    </tr>
+                    <tr>
+                        <td>Con</td>
+                        <td><input type="number" value="10" id="ConScore" max="20" onchange="reflectMod()"></td>
+                        <td><input type="number" placeholder ="0" id="ConMod"></td>
+                    </tr>
+                    <tr>
+                        <td>Dex</td>
+                        <td><input type="number" value="10" id="DexScore" max="20" onchange="reflectMod()"></td>
+                        <td><input type="number" placeholder ="0" id="DexMod"></td>
+                    </tr>
+                    <tr>
+                        <td>Int</td>
+                        <td><input type="number" value="10" id="IntScore" max="20" onchange="reflectMod()"></td>
+                        <td><input type="number" placeholder ="0" id="IntMod"></td>
+                    </tr>
+                    <tr>
+                        <td>Wis</td>
+                        <td><input type="number" value="10" id="WisScore" max="20" onchange="reflectMod()"></td>
+                        <td><input type="number" placeholder ="0" id="WisMod"></td>
+                    </tr>
+                    <tr>
+                        <td>Char</td>
+                        <td><input type="number" value="10" id="CharScore" max="20" onchange="reflectMod()"></td>
+                        <td><input type="number" placeholder ="0" id="CharMod"></td>
+                    </tr>
+                </table>
+                <br>
+                <div class="Player1">
+                    <h2>Character Level</h2>
+                    <br>
+                    <input type="number" id="level" min="1" max="20" value="1" onchange="LevelUp()">
+                    <br>
 
-        <p>Choose how many rounds you wish to participate in. Note: You will have to survive until the entered number rounds has been completed.</p>
+                </div>
+                <br>
+                <div class="Player1">
+                    <h2>Proficiency</h2>
 
-        <input type="text" placeholder="Choose Wisely..." name="InputRounds">
-        <button type="start" class="start" Id="start">Enter Battle!</button>
+                <br>
+                <input type="number" id="proficiency">
+                <br>
+            </div>
+
+            <br>
+
+            <div class="Player2">
+
+                <table class="table2">
+                    <tr>
+                        <th>Ability</th>
+                        <th>Score</th>
+                        <th>Modifier</th>
+                    </tr>
+                    <tr>
+                        <td>Str</td>
+                        <td><input type="number" value="10" id="StrScore2"onchange="reflectMod2()"></td>
+                        <td><input type="number" placeholder ="0" id="StrMod2"></td>
+                    </tr>
+                    <tr>
+                        <td>Con</td>
+                        <td><input type="number" value="10" id="ConScore2" onchange="reflectMod2()"></td>
+                        <td><input type="number" placeholder ="0" id="ConMod2"></td>
+                    </tr>
+                    <tr>
+                        <td>Dex</td>
+                        <td><input type="number" value="10" id="DexScore2" onchange="reflectMod2()"></td>
+                        <td><input type="number" placeholder ="0" id="DexMod2"></td>
+                    </tr>
+                    <tr>
+                        <td>Int</td>
+                        <td><input type="number" value="10" id="IntScore2" onchange="reflectMod2()"></td>
+                        <td><input type="number" placeholder ="0" id="IntMod2"></td>
+                    </tr>
+                    <tr>
+                        <td>Wis</td>
+                        <td><input type="number" value="10" id="WisScore2" onchange="reflectMod2()"></td>
+                        <td><input type="number" placeholder ="0" id="WisMod2"></td>
+                    </tr>
+                    <tr>
+                        <td>Char</td>
+                        <td><input type="number" value="10" id="CharScore2" onchange="reflectMod2()"></td>
+                        <td><input type="number" placeholder ="0" id="CharMod2"></td>
+                    </tr>
+                </table>
+                <br>
+                <div class="Player2">
+                    <h2>Character Level</h2>
+                    <br>
+                    <input type="number" id="level" min="1" max="20" value="1" onchange="LevelUp2()">
+                    <br>
+
+                </div>
+                <br>
+                <div class="Player2">
+                    <h2>Proficiency</h2>
+
+                <br>
+                <input type="number" id="proficiency2">
+                <br>
+            </div>
+
+
+            </div>
+            </div>
 
     </div>
-</div>
-   
 </body>
 </html>

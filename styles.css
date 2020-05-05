@@ -25,3 +25,10 @@
     font-weight: bold;
 }
 
+.table input {
+    width: 50%;
+}
+
+.table2 input {
+    width: 50%;
+}
