@@ -139,3 +139,27 @@ function reflectProficiency2() {
             reflectProficiency2();
             reflectMod2();
         }
+
+        function Armor(activeArmor) {
+            var armor = activeArmor.value;
+            if (armor == 'cloth') {
+                document.getElementById('AC').value = parseInt(document.getElementById('IntMod').value) + 11;
+            } else if (armor == 'leather') {
+                document.getElementById('AC').value = parseInt(document.getElementById('DexMod').value) + 13;
+        } else if (armor == 'plate') {
+            document.getElementById('AC').value = parseInt(document.getElementById('StrMod').value) + 15;
+        } else {
+            document.getElementById('AC').value = parseInt(document.getElementById('ConMod').value) + 9;
+        }}
+
+        function Armor2(activeArmor) {
+            var armor2 = activeArmor2.value;
+            if (armor2 == 'cloth') {
+                document.getElementById('AC2').value = parseInt(document.getElementById('IntMod2').value) + 11;
+            } else if (armor2 == 'leather') {
+                document.getElementById('AC2').value = parseInt(document.getElementById('DexMod2').value) + 13;
+        } else if (armor2 == 'plate') {
+            document.getElementById('AC2').value = parseInt(document.getElementById('StrMod2').value) + 15;
+        } else {
+            document.getElementById('AC2').value = parseInt(document.getElementById('ConMod2').value) + 9;
+        }}

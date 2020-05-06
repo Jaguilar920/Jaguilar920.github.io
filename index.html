@@ -14,6 +14,11 @@
         <div class="row">
 
             <div class="Player1">
+                <h2>Character Level</h2>
+            
+                    <input type="number" id="level" min="1" max="20" value="1" onchange="LevelUp()">
+                    <br>
+                    <br>
             
                 <table class="table">
                     <tr>
@@ -52,27 +57,51 @@
                         <td><input type="number" placeholder ="0" id="CharMod"></td>
                     </tr>
                 </table>
-                <br>
-                <div class="Player1">
-                    <h2>Character Level</h2>
-                    <br>
-                    <input type="number" id="level" min="1" max="20" value="1" onchange="LevelUp()">
-                    <br>
+                <h2>Proficiency</h2>
 
-                </div>
-                <br>
-                <div class="Player1">
-                    <h2>Proficiency</h2>
-
-                <br>
+                
                 <input type="number" id="proficiency">
                 <br>
+                <br>
+                <div>
+                    
+                    
+                    <h2>Armory</h2>
+                    
+                    <h3>Armor:</h3>
+                    <select id="activeArmor" onchange="Armor(this)">
+                        <option value="none" id="none" label="none"></option>
+                        <optgroup id="light" value="light" label="Light Armor">
+                        <option value="cloth">Cloth</option>
+                    </optgroup>
+                    <optgroup id="med" value="med" label="Medium Armor">
+                        <option value="leather">Leather</option>
+                        </optgroup>
+                        <optgroup id="heavy" value="heavy" label="Heavy Armor">
+                        <option value="plate">Plate</option>
+                    </optgroup>
+                    <br>
+                    <br>
+                    <h4>AC:</h4>
+                    <input type="number" id="AC" placeholder="0">
+                    </select>
+                </div>
+                <br>
+                <div>
+                
+               
             </div>
 
             <br>
+            <br>
+            <br>
 
             <div class="Player2">
-
+                <h2>Character Level</h2>
+                   
+                    <input type="number" id="level" min="1" max="20" value="1" onchange="LevelUp2()">
+                    <br>
+                    <br>
                 <table class="table2">
                     <tr>
                         <th>Ability</th>
@@ -110,21 +139,38 @@
                         <td><input type="number" placeholder ="0" id="CharMod2"></td>
                     </tr>
                 </table>
-                <br>
-                <div class="Player2">
-                    <h2>Character Level</h2>
-                    <br>
-                    <input type="number" id="level" min="1" max="20" value="1" onchange="LevelUp2()">
-                    <br>
+                <h2>Proficiency</h2>
 
+                <input type="number" id="proficiency2">
+                <br> 
+                <br>
+                <div>
+                    
+                    <h2>Armory</h2>
+                    
+                    <h3>Equipped:</h3>
+                    <select id="activeArmor2" onchange="Armor2(this)">
+                        <option value="none" id="none" label="none"></option>
+                        <optgroup id="light" value="light" label="Light Armor">
+                        <option value="cloth">Cloth</option>
+                    </optgroup>
+                    <optgroup id="med" value="med" label="Medium Armor">
+                        <option value="leather">Leather</option>
+                        </optgroup>
+                        <optgroup id="heavy" value="heavy" label="Heavy Armor">
+                        <option value="plate">Plate</option>
+                    </optgroup>
+                    <br>
+                    <br>
+                    <h5>AC:</h5>
+                    <input type="number" id="AC2" placeholder="0">
+                    </select>
                 </div>
                 <br>
-                <div class="Player2">
-                    <h2>Proficiency</h2>
-
                 <br>
-                <input type="number" id="proficiency2">
-                <br>
+                <div>
+                    
+                
             </div>
 
 

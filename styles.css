@@ -32,3 +32,19 @@
 .table2 input {
     width: 50%;
 }
+
+.Player1 {
+    float: left;
+    margin: auto;
+    Border-width: 2px;
+    Border-color: black;
+    position: left;
+    padding: 20px;
+}
+.Player2 {
+    float: right;
+    margin: auto;
+    border-width: 2px;
+    border-color: black;
+    position: right;
+}
