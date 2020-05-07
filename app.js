@@ -196,6 +196,7 @@ function reflectProficiency2() {
 function AttackP1() {
 HP = parseInt($('.HP1').text());
 NewHP= HP - Math.floor(Math.random()*13)+4;;
+console.log(NewHP)
 $('.HP1').text(`${NewHP}`);
 
 }
