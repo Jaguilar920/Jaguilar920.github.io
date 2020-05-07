@@ -200,9 +200,9 @@ $('.HP1').text(`${NewHP}`);
 
 }
 function AttackP2() {
-    HP = parseInt($('.HP2').text());
-    NewHP= HP - 16;
-    $('.HP2').text(`${NewHP}`);
+    HP2 = parseInt($('.HP2').text());
+    NewHP2= HP2 - 16;
+    $('.HP2').text(`${NewHP2}`);
     
     }
 
