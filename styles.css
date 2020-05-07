@@ -24,27 +24,59 @@
     font-size: 30px;
     font-weight: bold;
 }
-
+.table {
+    width: 100%;
+}
+.table2 {
+    width: 100%;
+}
 .table input {
-    width: 50%;
+   
 }
 
 .table2 input {
-    width: 50%;
+    
 }
 
 .Player1 {
-    float: left;
+    
     margin: auto;
-    Border-width: 2px;
-    Border-color: black;
-    position: left;
-    padding: 20px;
+    width: 100%;
+    
+}
+
 }
 .Player2 {
-    float: right;
+   
     margin: auto;
-    border-width: 2px;
-    border-color: black;
-    position: right;
+    width: 100;
+    
+}
+.combat {
+    width: 100;
+    margin: auto;
+
+}
+.P1C {
+   
+}
+
+.P2C {
+    
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+}
+body {
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
 }

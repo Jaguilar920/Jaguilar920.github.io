@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
 
-        <div class="row">
+       
 
             <div class="Player1">
                 <h2>Character Level</h2>
@@ -80,6 +81,7 @@
                         <optgroup id="heavy" value="heavy" label="Heavy Armor">
                         <option value="plate">Plate</option>
                     </optgroup>
+                   
                     <br>
                     <br>
                     <h4>AC:</h4>
@@ -99,7 +101,7 @@
             <div class="Player2">
                 <h2>Character Level</h2>
                    
-                    <input type="number" id="level" min="1" max="20" value="1" onchange="LevelUp2()">
+                    <input type="number" id="level2" min="1" max="20" value="1" onchange="LevelUp2()">
                     <br>
                     <br>
                 <table class="table2">
@@ -175,8 +177,55 @@
 
 
             </div>
-            </div>
+            
 
+    
+    <div class="Combat">
+        <h1>Combat Simulation</h1>
+
+        <div class="P1C">
+            <h2 class="title1">Player 1</h2>
+            <h4 class="HPTitle">Hitpoints:</h4>
+         <div class="HP1"></div>
+         <div class="AC1"></div>
+         <div class="Hit1"></div>
+         <div class="DC1"></div>
+         <div class="MHit1"></div>
+            <div class="P1SkillSelection">
+                <br>
+                Attacks:
+                <button class="DivineSmite" onclick="AttackP2()">Divine Smite</button>
+                <button class="Slash" onclick="AttackP2()">Weapon Attack</button>
+            </div>
+                Spells:
+                <button class="FireBolt" onclick="AAttackP2()">Fire Bolt</button>
+                <button class="Eldritch" onclick="AttackP2()">Eldritch Blast</button>
+            </div>
+        </div>
+
+        <div class="P2C">
+            <h2 class="title2">Player 2</h2>
+            <H4 class="HPTitle2">Hitpoints:</h4>
+            <div class="HP2"></div>
+            <div class="AC2"></div>
+            <div class="Hit2"></div>
+            <div class="DC2"></div>
+            <div class="MHit2"></div>
+            <div class="P2SkillSelection">
+                Attacks:
+                <button class="DivineSmite" onclick="AttackP1()">Divine Smite</button>
+                <button class="Slash" onclick="AttackP1()">Weapon Attack</button>
+            </div>
+                Spells:
+                <button class="FireBolt" onclick="AttackP1()">Fire Bolt</button>
+                <button class="Eldritch" onclick="AttackP1()">Eldritch Blast</button>
+        </div>
+        <div class="Log">
+            <h4></h4>
+        </div>
+        </div>
     </div>
+   
+    
 </body>
 </html>
