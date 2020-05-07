@@ -57,6 +57,13 @@ based on chosen skill (Var AttackModifier = hero.Attack - Enemy.AC
 //     onload = function () {
 //         Modal.style.display = "block";
 //     }
+
+// make table for all the dnd stats
+// make table 2 for dnd stats
+// make combat container for combat//
+// make player 1 and player 2 combat with buttons that subtract hp
+
+//make formula to keep track of current hp.
 function reflectHP1(){
     var $HP1 = $('#ConMod').val()*$('#level').val()+100
     $('.HP1').text(`${$HP1}`);
