@@ -193,10 +193,11 @@ $('.HP2').text(`${NewHP}`);
 
 }
 function AttackP2() {
-    var TempHP = parseInt($('.HP1').val());
-    $('.HP1').text(`${NewHp}`);
-
-}
+    HP = parseInt($('.HP1').val());
+    NewHP= HP - 16;
+    $('.HP1').text(`${NewHP}`);
+    
+    }
 
 
 
