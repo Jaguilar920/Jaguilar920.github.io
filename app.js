@@ -201,7 +201,7 @@ $('.HP1').text(`${NewHP}`);
 }
 function AttackP2() {
     HP2 = parseInt($('.HP2').text());
-    NewHP2= HP2 - 16;
+    NewHP2= HP2 - Math.floor(Math.random()*13)+4;
     $('.HP2').text(`${NewHP2}`);
     
     }
