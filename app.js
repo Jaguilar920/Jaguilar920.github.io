@@ -187,15 +187,15 @@ function reflectProficiency2() {
 
 
 function AttackP1() {
-HP = parseInt($('.HP2').val());
+HP = parseInt($('.HP1').text());
 NewHP= HP - 16;
-$('.HP2').text(`${NewHP}`);
+$('.HP1').text(`${NewHP}`);
 
 }
 function AttackP2() {
-    HP = parseInt($('.HP1').val());
+    HP = parseInt($('.HP2').text());
     NewHP= HP - 16;
-    $('.HP1').text(`${NewHP}`);
+    $('.HP2').text(`${NewHP}`);
     
     }
 
