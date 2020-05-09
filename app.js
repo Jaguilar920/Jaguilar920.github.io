@@ -65,8 +65,10 @@ based on chosen skill (Var AttackModifier = hero.Attack - Enemy.AC
 
 //make formula to keep track of current hp.
 function reflectHP1(){
-    var $HP1 = $('#ConMod').val()*$('#level').val()+100
-    $('.HP1').text(`${$HP1}`);
+    var $HP1 = $('#ConMod').val()*$('#level').val()
+    var $HP2 = $('#level').val()*10;
+    var $HP1Val = $HP1 + $HP2;
+    $('.HP1').text(`${$HP1Val}`);
     }
 
     function Armor(activeArmor) {
@@ -85,8 +87,10 @@ function reflectHP1(){
 //     $('.AC1').text(`AC: ${$AC1}`)
 // }
 function reflectHP2(){
-    var $HP2 = $('#ConMod2').val()*$('#level2').val()+100
-    $('.HP2').text(`HP: ${$HP2}`);
+    var $HP1 = $('#ConMod2').val()*$('#level2').val()
+    var $HP2 = $('#level2').val()*10;
+    var $HP1Val = $HP1 + $HP2;
+    $('.HP2').text(`${$HP1Val}`);
 }
     
 function reflectMod() {
@@ -194,17 +198,45 @@ function reflectProficiency2() {
 
 
 function AttackP1() {
-HP = parseInt($('.HP1').text());
-NewHP= HP - Math.floor(Math.random()*13)-4;
-$('.HP1').text(`${NewHP}`);
+$HP = parseInt($('.HP1').text());
+$Char = parseInt($('#CharMod2').val())
+$Equ = Math.floor(Math.random()*10)+1 + $Char;
+$NewHp = $HP - $Equ; 
+$('.HP1').text(`${$NewHp}`);
 
 }
 function AttackP2() {
-    HP2 = parseInt($('.HP2').text());
-    NewHP2= HP2 - Math.floor(Math.random()*13)-4;
-    $('.HP2').text(`${NewHP2}`);
-    
+$HP = parseInt($('.HP2').text());
+$Char = parseInt($('#CharMod').val())
+$Equ = Math.floor(Math.random()*10)+1 + $Char;
+$NewHp = $HP - $Equ; 
+$('.HP2').text(`${$NewHp}`);
+}
+
+////PLAYER 1 SKILLS////
+//Eldritch Blast///
+function Eldritch1() {
+    $lvl = parseInt($('#level').val())
+    if($lvl >=1) {
+        EldritchAtt1();
+    } if($lvl >= 5) {
+        EldritchAtt1();
+    } if($lvl>= 11) {
+        EldritchAtt1();
+    } if($lvl >= 17) {
+        EldritchAtt1();
     }
+}
+function EldritchAtt1() {
+    $Mod = parseInt($('#CharMod').val());
+    $Prof = parseInt($('#Proficiency').val());
+    $DC2 = parseInt($('#AC2').val());
+    $Acc = Math.floor(Math.random()*20) + $Mod + $Prof;
+
+    if ($Acc > $DC2) {
+        AttackP2();
+    }
+}
 
 
 
